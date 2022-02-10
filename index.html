@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>小学生理科クイズ</title>
+  </head>
+  <body>
+    <!-- top section -->
+    <div class="intro py-3 bg-white text-center">
+      <div class="container">
+        <h2 class="text-primary display-3 my-4">小学生 理科クイズ</h2>
+      </div>
+    </div>
+
+    <!-- output -->
+    <div class="result py-4 d-none bg-light text-center">
+      <div class="container lead">
+        <p>
+          お前のスコアは
+          <span class="text-primary display-4 p-3">0%</span>
+          だああああああ！！！！
+        </p>
+      </div>
+    </div>
+
+    <!-- quiz section -->
+    <div class="quiz py-4 bg-primary">
+      <div class="container">
+        <h2 class="my-5 text-white">下記の問題でAかBか選びなさい。</h2>
+
+        <form class="quiz-form text-light">
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              1. 湯気は気体、液体のどちらでしょうか？
+            </p>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q1" value="A" checked />
+              <label class="form-check-label">A. 気体</label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q1" value="B" />
+              <label class="form-check-label">B. 液体</label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              2. 海いるクジラは、何に分類されるでしょうか？
+            </p>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q2" value="A" checked />
+              <label class="form-check-label">A. 爬虫類(爬虫類)</label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q2" value="B" />
+              <label class="form-check-label">B. 哺乳類(哺乳類)</label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              3. 炎(ほのお)の温度が一番高いのは、何色でしょうか？
+            </p>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q3" value="A" checked />
+              <label class="form-check-label">A. オレンジ</label>
+            </div>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q3" value="B" />
+              <label class="form-check-label">B. 青</label>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <p class="lead font-weight-normal">
+              4. 正座で夏の大三角形といえば、どちらでしょうか？
+            </p>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q4" value="A" checked />
+              <label class="form-check-label"
+                >A. ベガ、アルタイル、デネブ</label
+              >
+            </div>
+            <div class="form-check my-2 text-white">
+              <input type="radio" name="q4" value="B" />
+              <label class="form-check-label"
+                >B. ベガ、シリウス、プロキオン</label
+              >
+            </div>
+          </div>
+
+          <div class="text-center">
+            <input type="submit" class="btn btn-light" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
