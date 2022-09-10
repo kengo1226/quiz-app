@@ -1,109 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300;600;800&display=swap"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
-    <title>小学生理科クイズ</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <title>Kengo Iwamoto|Portfolio</title>
   </head>
+
   <body>
-    <!-- top section -->
-    <div class="intro py-3 bg-white text-center">
+    <!-- Sticky header -->
+    <header class="header">
       <div class="container">
-        <h2 class="text-primary display-3 my-4">小学生 理科クイズ</h2>
+        <a href="#" class="logo-a"
+          ><img src="./img/port-logo.png" alt="kengoiwamoto-logo" class="logo"
+        /></a>
+        <i class="fas fa-bars menuIcon"></i>
+        <i class="fas fa-times closeIcon"></i>
+        <div class="header-right">
+          <ul>
+            <li><a href="#about" class="link">ABOUT</a></li>
+            <li><a href="#web" class="link2">WEB</a></li>
+            <li><a href="#photo" class="link3">PHOTOGRAHY</a></li>
+            <li><a href="#youtube" class="link4">YOUTUBE</a></li>
+            <li><a href="#contact" class="link5">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <!-- output -->
-    <div class="result py-4 d-none bg-light text-center">
-      <div class="container lead">
-        <p>
-          お前のスコアは
-          <span class="text-primary display-4 p-3">0%</span>
-          だああああああ！！！！
-        </p>
-      </div>
-    </div>
-
-    <!-- quiz section -->
-    <div class="quiz py-4 bg-primary">
+    <!-- section hero -->
+    <section id="hero">
       <div class="container">
-        <h2 class="my-5 text-white">下記の問題でAかBか選びなさい。</h2>
-
-        <form class="quiz-form text-light">
-          <div class="my-5">
-            <p class="lead font-weight-normal">
-              1. 湯気は気体、液体のどちらでしょうか？
-            </p>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q1" value="A" checked />
-              <label class="form-check-label">A. 気体</label>
-            </div>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q1" value="B" />
-              <label class="form-check-label">B. 液体</label>
-            </div>
-          </div>
-
-          <div class="my-5">
-            <p class="lead font-weight-normal">
-              2. 海いるクジラは、何に分類されるでしょうか？
-            </p>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q2" value="A" checked />
-              <label class="form-check-label">A. 爬虫類(爬虫類)</label>
-            </div>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q2" value="B" />
-              <label class="form-check-label">B. 哺乳類(哺乳類)</label>
-            </div>
-          </div>
-
-          <div class="my-5">
-            <p class="lead font-weight-normal">
-              3. 炎(ほのお)の温度が一番高いのは、何色でしょうか？
-            </p>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q3" value="A" checked />
-              <label class="form-check-label">A. オレンジ</label>
-            </div>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q3" value="B" />
-              <label class="form-check-label">B. 青</label>
-            </div>
-          </div>
-
-          <div class="my-5">
-            <p class="lead font-weight-normal">
-              4. 正座で夏の大三角形といえば、どちらでしょうか？
-            </p>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q4" value="A" checked />
-              <label class="form-check-label"
-                >A. ベガ、アルタイル、デネブ</label
-              >
-            </div>
-            <div class="form-check my-2 text-white">
-              <input type="radio" name="q4" value="B" />
-              <label class="form-check-label"
-                >B. ベガ、シリウス、プロキオン</label
-              >
-            </div>
-          </div>
-
-          <div class="text-center">
-            <input type="submit" class="btn btn-light" />
-          </div>
-        </form>
+        <div class="hero-content">
+          <h1><span class="main-txt">KENGO</span> IWAMOTO</h1>
+          <p>Designer & Front-End Developer</p>
+        </div>
+        <div class="scroll-icon">
+          <a href="#about"><i class="fas fa-angle-down down"></i></a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <script src="./app.js"></script>
+    <!-- section about -->
+    <section id="about" class="py-5">
+      <p class="back-txt">ABOUT</p>
+      <div class="container">
+        <div class="about-left">
+          <img src="./img/about-img.jpg" alt="" />
+        </div>
+        <div class="about-right">
+          <h3 class="primaly-hl reveal">
+            ABOUT<span class="blue-dot">.</span>
+          </h3>
+          <h4 class="reveal">岩本 謙吾</h4>
+          <p class="txt">
+            都内のIT企業でWEBデザイナー＆フロントエンドエンジニアとして活動している岩本謙吾です。
+            現在は国内外の企業様のLPやHPの制作を行なっております。デザイン作成からアップロードまで一貫して行なっています。
+          </p>
+          <div class="skills">
+            <div class="skill-top">
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill-bottom">
+              <p>Wordpress</p>
+              <p>Photoshop</p>
+              <p>illustrator</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section web works -->
+    <section id="web" class="py-5">
+      <p class="back-txt">WEB</p>
+      <div class="container">
+        <h3 class="primaly-hl show-hl">
+          WEB WORKS<span class="blue-dot">.</span>
+        </h3>
+        <p class="sub-hl show-hl">画像をクリックでリンク先へ移動します。</p>
+
+        <div class="web-top">
+          <a href="http://ijjremote.online/"
+            ><img src="./img/IJJ.png" alt="LPのリンク画像です"
+          /></a>
+          <a href="http://xn--cckds5dydp5l847wzs3a7z0a63te82d.com/"
+            ><img src="./img/ion.png" alt="LPのリンク画像です"
+          /></a>
+          <a href="https://yokohama-shu.trsp.biz/"
+            ><img src="./img/yokohama.png" alt="HPのリンク画像です"
+          /></a>
+          <!-- </div>
+            <div class="web-bottom"> -->
+          <a href="http://ikueidou.official.jp/"
+            ><img src="./img/ikueidou.png" alt="HPのリンク画像です"
+          /></a>
+          <a href="https://re-cover.life/"
+            ><img src="./img/recover.png" alt="HPのリンク画像です"
+          /></a>
+          <a href="https://trungcafe-hcmc.com/"
+            ><img src="./img/Trung.png" alt="HPのリンク画像です"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section photo -->
+    <section id="photo" class="py-5">
+      <p class="back-txt">PHOTO</p>
+      <div class="container">
+        <h3 class="primaly-hl show-hl">
+          PHOTO WORKS<span class="blue-dot">.</span>
+        </h3>
+        <p class="sub-hl show-hl">画像をクリックで拡大表示できます。</p>
+
+        <div class="photo-box">
+          <img
+            src="./img/twoblend.png"
+            alt="Photoshopで2枚の画像をブレンドしました"
+            id="myImg"
+          />
+          <img
+            src="./img/butterfly.png"
+            alt="Photoshopで複数の画像を組み合わせて作成しました"
+            id="myImg2"
+          />
+          <img
+            src="./img/glitch.png"
+            alt="Photoshopでグリッチエフェクトを作成しました"
+            id="myImg3"
+          />
+        </div>
+        <div class="modal" id="myModal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" />
+          <div id="caption"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section youtube -->
+    <section id="youtube" class="py-5">
+      <p class="back-txt">YOUTUBE</p>
+      <div class="container">
+        <h3 class="primaly-hl show-hl">
+          YOUTUBE<span class="blue-dot">.</span>
+        </h3>
+        <p class="sub-hl show-hl">Youtubeにて動画を公開しています。</p>
+
+        <div class="youtube-box">
+          <div class="yt-container">
+            <iframe
+              width="auto"
+              height="auto"
+              src="https://www.youtube.com/embed/sqOQYdtM48Y"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="yt-content">
+            <h4 class="pyb-2">CODE-MOTIVE</h4>
+            <p class="pyb-2">
+              YoutubeにてHTML/CSS/JavaScriptを使ったコーディング動画を不定期でアップロードしています。
+            </p>
+            <a
+              href="https://www.youtube.com/channel/UCNGXvazRlZu_Gni0B8JngtQ"
+              class="btn"
+              target="_blank"
+              >Youtubeへ移動する</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact">
+      <div class="contact-content py-3">
+        <div class="container">
+          <h3 class="primaly-hl pyb-1">
+            CONTACT<span class="blue-dot">.</span>
+          </h3>
+          <h5 class="pyb-1">kengo1226size@gmail.com</h5>
+          <p>お問い合わせは上記のメールアドレスにお願いいたします。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-logo py-3">
+        <img src="./img/port-logo.png" alt="" />
+      </div>
+      <p>&copy;Kengo Iwamoto</p>
+    </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
